@@ -17,6 +17,7 @@ public class Player : Creature
 		{
 			int num = Random.Range(1, 5);
 			print("玩家攻擊了殭屍造成了<color=#0000ff>"+num*Atk+"</color>點的傷害");
+			auoS.PlayOneShot(auoC, 1);
 			zom.Injury(num * Atk);
 			zom.Dead();
 		}

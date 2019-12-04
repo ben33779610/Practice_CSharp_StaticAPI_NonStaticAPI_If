@@ -17,6 +17,7 @@ public class Zombie : Creature
 		{
 			
 			print("殭屍攻擊了玩家造成了<color=#A8100D>" +  Atk + "</color>點的傷害");
+			auoS.PlayOneShot(auoC, 1);
 			player.Injury(Atk);
 			player.Dead();
 		}
